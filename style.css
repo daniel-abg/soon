@@ -1,0 +1,424 @@
+:root {
+	--border-color: #BBB;
+}
+
+*:focus {outline: none;}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: white;
+}
+
+.float-right {
+	float: right;
+}
+
+.width-42 {
+	width: 42px;
+}
+
+.padding-0 {
+	padding: 0;
+}
+
+.margin-top-4 {
+	margin-top: 4px;
+}
+
+.margin-top-10 {
+	margin-top: 10px;
+}
+.margin-top-20 {
+	margin-top: 20px;
+}
+
+.margin-right-10 {
+	margin-right: 10px;
+}
+
+.margin-bottom-0 {
+	margin-bottom: 0 !important;
+}
+.margin-bottom-10 {
+	margin-bottom: 10px;
+}
+.margin-bottom-20 {
+	margin-bottom: 20px;
+}
+.margin-bottom-30 {
+	margin-bottom: 30px;
+}
+.margin-bottom-90 {
+	margin-bottom: 90px;
+}
+
+.color-red {
+	color: #d9534f !important;
+}
+
+.box {
+	border: 1px solid var(--border-color);
+	border-radius: 5px;
+	padding: 20px;
+	margin-bottom: 100px;
+}
+
+.box-10 {
+	border: 1px solid var(--border-color);
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+
+a, a:hover {
+	text-decoration: none;
+	color: black;
+}
+	
+
+/* 
+==============================
+==============================
+Formulare und Buttons 
+==============================
+============================== 
+*/
+
+	.btn-light {
+		color: black;
+		background-color: white;
+		border: 1px solid var(--border-color);
+	}
+	
+	.btn-light:hover {
+		color: black;
+		background-color: #eee;
+	}
+
+	.btn-red {
+		color: white !important;
+		background-color: #e9494c;
+	}
+	
+	.btn-red:hover {
+		color: white;
+		background-color: #ca4043;
+	}
+	
+	label {
+		font-weight: normal;
+	}
+		
+	.input-group-text > .fa, .input-group-text > .far, .input-group-text > .fas {
+		width: 16px;
+	}
+	
+	.dropdown-form {
+		height: 34px;
+		width: 100%;
+		padding-left: 12px;
+		margin-bottom: 16px;
+		border-color: #ccc;
+		border-radius: 5px;
+	}
+	
+	.dropdown-form-prepend {
+		height: 34px;
+		width: calc(100% - 42px);
+		padding-left: 12px;
+		border-color: #ccc;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}/* Ende von CSS betreffend Formulare und Buttons */
+
+/* 
+==============================
+==============================
+Betrifft nur calendar.php 
+==============================
+============================== 
+*/
+
+	.calendar-container {
+		margin-bottom: 100px;
+	}
+	
+	.date {
+		margin-bottom: 10px;
+		width: 100%;
+		overflow: hidden;
+		word-wrap: break-word;
+	}
+		
+	.appointment {
+		margin-bottom: 10px;
+		border: 1px solid var(--border-color);
+		border-radius: 5px;
+	}
+	
+	.appointment-icon {
+		font-size: 150%;
+		padding: 0 5px;
+		cursor: default;
+		-webkit-user-select: none; /* Safari 3.1+ */
+		-moz-user-select: none; /* Firefox 2+ */
+		-ms-user-select: none; /* IE 10+ */
+		user-select: none; /* Standard syntax */
+	}
+	
+	.title {
+		font-weight: bold;
+		display: block;
+		padding: 10px;
+		word-wrap: break-word;
+		overflow: hidden;
+	}
+		
+	.appointmentinformation {
+		padding: 10px;
+		border-top: 1px solid var(--border-color);
+	}
+	
+	.time, .location, .comment, .description {
+		padding-bottom: 10px;
+		word-wrap: break-word;
+	}
+
+	.calendar-container .row {
+		margin: 0;
+	} 
+
+	/* Ermöglicht Spalten */
+	@media (min-width: 0px){
+		.calendar-cols .col-md-1,
+		.calendar-cols .col-sm-1,
+		.calendar-cols .col-lg-1  {
+			word-wrap: break-word;
+			width: 50% !important;
+			*width: 50% !important;
+			padding: 0 5px;
+			margin-bottom: 20px;
+		}
+	}
+
+	@media (min-width: 768px) {
+		.calendar-cols .col-md-1,
+		.calendar-cols .col-sm-1,
+		.calendar-cols .col-lg-1 {
+			word-wrap: break-word;
+			width: 33.33333333333333% !important;
+			*width: 33.33333333333333% !important;
+			max-width: 33.33333333333333% !important;
+			flex: none !important;
+			padding: 0 5px;
+			margin-bottom: 20px;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		.calendar-cols .col-md-1,
+		.calendar-cols .col-sm-1,
+		.calendar-cols .col-lg-1 {
+			word-wrap: break-word;
+			width: 14.285714285714285714285714285714%;
+			*width: 14.285714285714285714285714285714%;
+			max-width: 14.285714285714285714285714285714% !important;
+			flex: none !important;
+			padding: 0 5px;
+			margin-bottom: 20px;
+		}
+	}
+	
+	.compact-container {
+		margin-bottom: 100px;
+	}
+	
+	.compact-container .row {
+		margin: 0;
+	}
+	
+	/* Ermöglicht Spalten */	
+	@media (min-width: 0px){
+		.compact-cols .col-md-1,
+		.compact-cols .col-sm-1,
+		.compact-cols .col-lg-1  {
+			word-wrap: break-word;
+			width: 25% !important;
+			*width: 25% !important;
+			padding: 0 5px;
+			margin-bottom: 20px;
+		}
+	}
+
+	@media (min-width: 768px) {
+		.compact-cols .col-md-1,
+		.compact-cols .col-sm-1,
+		.compact-cols .col-lg-1 {
+			word-wrap: break-word;
+			width: 14.285714285714285714285714285714% !important;
+			*width: 14.285714285714285714285714285714% !important;
+			max-width: 14.285714285714285714285714285714% !important;
+			flex: none !important;
+			padding: 0 5px;
+			margin-bottom: 20px;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		.compact-cols .col-md-1,
+		.compact-cols .col-sm-1,
+		.compact-cols .col-lg-1 {
+			word-wrap: break-word;
+			width: 7.142857142857143%;
+			*width: 7.142857142857143%;
+			max-width: 7.142857142857143% !important;
+			flex: none !important;
+			padding: 0 5px;
+			margin-bottom: 20px;
+		}
+	}
+	
+	/* "Nach oben"-Button */
+	#myBtn {
+		display: none; /* Hidden by default */
+		position: fixed; /* Fixed/sticky position */
+		bottom: 20px; /* Place the button at the bottom of the page */
+		right: 30px; /* Place the button 30px from the right */
+		z-index: 99; /* Make sure it does not overlap */
+		border: none; /* Remove borders */
+		outline: none; /* Remove outline */
+		background-color: white; /* Set a background color */
+		color: black; /* Text color */
+		cursor: pointer; /* Add a mouse pointer on hover */
+		padding: 15px; /* Some padding */
+		border: 1px solid var(--border-color);
+		border-radius: 5px; /* Rounded corners */
+	}
+	
+	#myBtn:hover {
+		background-color: #eee;
+	}/* Ende von CSS, welches nur calendar.php betrifft */
+	
+	.row {
+	  display: -webkit-box;
+	  display: -webkit-flex;
+	  display: -ms-flexbox;
+	  display: flex;
+	  flex-wrap: wrap;
+	}
+	
+	.row > [class*='col-'] {
+	  display: flex;
+	  flex-direction: column;
+	}
+
+/* 
+==============================
+==============================
+Betrifft nur index.php 
+==============================
+============================== 
+*/
+
+	.background-image {
+		background-image: url(images/landscape_resize.jpg);
+		min-height: calc(100vh - 52px);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	h1#headline {
+		color: white;
+		padding: 20px;
+		text-align: center;
+		line-height: 1.4285;
+		background: rgba(0,0,0,0.5);
+		background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0.5) 0%, rgba(179,179,179,0) 70%, rgba(255,255,255,0) 100%);
+		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(0,0,0,0.5)), color-stop(70%, rgba(179,179,179,0)), color-stop(100%, rgba(255,255,255,0)));
+		background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0.5) 0%, rgba(179,179,179,0) 70%, rgba(255,255,255,0) 100%);
+		background: -o-radial-gradient(center, ellipse cover, rgba(0,0,0,0.5) 0%, rgba(179,179,179,0) 70%, rgba(255,255,255,0) 100%);
+		background: -ms-radial-gradient(center, ellipse cover, rgba(0,0,0,0.5) 0%, rgba(179,179,179,0) 70%, rgba(255,255,255,0) 100%);
+		background: radial-gradient(ellipse at center, rgba(0,0,0,0.5) 0%, rgba(179,179,179,0) 70%, rgba(255,255,255,0) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff', GradientType=1 );
+	}
+
+	h2 {
+		color: black;
+		line-height: 1.4285;
+		margin: 80px 0 20px 0;
+		padding: 0 10px 0 10px;
+	}
+
+	.linkbox {
+		padding: 20px;
+		text-align: center;
+		font-size: 1.5rem;
+		box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+	}
+
+	.linkbox:hover {
+		opacity: 0.95;
+	}
+
+	.registration {
+		background-color: #e9494c;
+		color: white;
+	}
+
+	.login {
+		background-color: #f8f8f8;
+		color: black;
+	}
+		
+	.more-information-button {
+		color: white;
+		text-align: center;
+	} 
+	
+	.container#more_information .box {
+		text-align: left;
+	}
+	
+	.container#more_information h1 {
+		padding-top: 45px;
+	}
+	
+	.container#more_information {
+		text-align: center;
+		padding-top: 45px;
+	} /* Ende von CSS, welches nur index.php betrifft */
+
+/* 
+==============================
+==============================
+Betrifft nur navbar.php 
+==============================
+============================== 
+*/
+
+	.navbar {
+		margin-bottom: 0px;
+		background-color: white;
+		border: 0;
+	}
+
+	.ml-auto .dropdown-menu {
+		left: auto !important;
+		right: 0px;
+	}
+
+/* 
+==============================
+==============================
+Betrifft nur profile.php 
+==============================
+============================== 
+*/
+	td {
+		background-color: white;
+	}
